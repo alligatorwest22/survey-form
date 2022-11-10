@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <title>ARMY Colombia Registration</title>
+    <link rel="stylesheet" href="styles-two.css" />
+  </head>
+  <body>
+    <div class="form-group">
+        <div class="header">
+            <!-- 1 -->
+            <h1 id="title">ARMY Colombia Registration</h1>
+            <!-- 2 -->
+            <p id="description">
+              Register to be part of the official fandom of BTS Colombia
+            </p>
+        </div>
+        <!-- 3 -->
+        <form action="/mailinglist.php" method="post" id="survey-form">
+          <fieldset for="personal-data" class="user-data">
+            <div>
+              <label for="" id="name-label">Name</label>
+              <!-- 4 -->
+              <input
+                type="text"
+                name="user-name"
+                minlength="5"
+                maxlength="30"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div>
+              <label for="" id="email-label">Email</label>
+              <!-- 5 -->
+              <input
+                type="email"
+                name="user-email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div>
+              <label for="" id="number-label">Age</label>
+              <!-- 7 & 9-->
+              <input
+                type="number"
+                id="number"
+                min="16"
+                max="90"
+                placeholder="Age"
+                required
+              />
+            </div>
+            <div>
+              <p>What option best describes your current status?</p>
+              <!-- 12 -->
+              <select name="" id="dropdown">
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="no-info">Prefer not to say</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset for="recomendations" class="user-recommendations">
+            <div>
+              <p>Would you recommend ARMY Colombia to a friend?</p>
+              <label name="recommend"
+                ><input name="user-recommend" value="definetely" type="radio" />
+                Definetely</label
+              >
+              <label name="recommend"
+                ><input name="user-recommend" type="radio" value="maybe" />
+                Maybe</label
+              >
+              <label name="recommend"
+                ><input name="user-recommend" type="radio" value="for-sure" /> For
+                sure</label
+              >
+            </div>
+            <div>
+              <p>Which social network do you use the most?</p>
+              <label for=""
+                ><input type="checkbox" value="facebook" />Facebook</label
+              >
+              <label for=""
+                ><input type="checkbox" value="instagram" />Instagram</label
+              >
+              <label for=""><input type="checkbox" value="twitter" />Twitter</label>
+              <label for=""><input type="checkbox" value="tiktok" />TikTok</label>
+            </div>
+          </fieldset>
+          <fieldset for="comment" class="user-comments">
+            <div>
+              <p>Share your comments</p>
+              <textarea name="comments" id="" cols="30" rows="10"></textarea>
+            </div>
+          </fieldset>
+          <div class="footer">
+            <button id="submit">Submit</button></div>
+        </form>
+    </div>
+  </body>
+</html>
